@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Pet Sitting</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,8 +11,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body class="container-fluid">
-  <nav class="navbar navbar-inverse">
+<body class="container-fluid" style="background-color: lightcyan; margin: auto auto" >
+  <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
              <span class="icon-bar"></span>
@@ -24,49 +24,102 @@
     
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Page 1 </a></li>
-          <li><a href="#">Page 2</a></li>
-          <li><a href="#">Page 3</a></li>
+          <li class="active"><a href="#home" class="glyphicon glyphicon-home"></a></li>
+          <li><a href="#Dogs">Dogs<span class="badge">2</span> </a></li>
+          <li><a href="#Cats">Cats<span class="badge">2</span></a></li>
+          <li><a href="#Fish">Fish<span class="badge">5</span></a></li>
+            <li><a href="#myCarousel">Pictures<span class="badge">8</span></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Apply</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="#Contact"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
         </ul>
       </div>
    </nav>
  
-<div class="jumbotron">
-  <h1>Advertisement</h1>      
-  <p>Overview of information.</p>
+<div id = "home" class="jumbotron">
+  <h1 style="text-align: center">Pet Sitter Needed</h1> 
+  <h2>Do you love animals? Stay at la casa de animales!</h2>     
+  <p> Enjoy a free week-long vacation while petting the most adorable cats and dogs. Take long walks with your borrowed best friends. Someone will always be available to cuddle. 
+  </p>
 </div>
 
- <div class="row">
-    <div class="col-sm-8" style="background-color:lavender;">
-        <h2>More information</h2>
+<section class="row">
+  <div class="col-sm-9" style="background-color: lightcyan">
+   <h2>Pet Care</h2>
+      <p>In need of a pet sitter for our beloved animals. We have a trip planned in the near future and although we would love to bring them along, we cannot. In the household we have 2 dogs (Chance and Aria), 2 cats (Raven and Boots), and fish. We need someone that can take care of them while we are away. Very low maintance and a relaxing get away for any pet lover. 
+      </p>
+    </div>
+  <div class="alert alert-dismissable fade in col-sm-3" style="background-color: lightgoldenrodyellow; text-align: center;">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Interested?</strong> Contact us anytime with our information at the bottom of the page!
+  </div>
+</section>
+
+ <section id="Dogs" class="row" style="background-color: #eee; margin: 0 1px">
+    <div class="col-sm-9">
+        <h3 style="text-align: center">Chance & Aria</h3>
+        <h4>Daily Routine</h4>
     <p>Info</p>
     <p>Info</p>
     </div>
-    <div class="col-sm-4" style="background-color:lavenderblush;">
-    <h2>Pictures</h2>
-    <p>Info</p>
-    <p>Info</p>
+    <div class="col-sm-3">
+       <img class="img-responsive img-circle center-block" src="Chance_closeup.jpg" alt="Handsome dog" style="width: 50%">
+       <p class="label label-default" style="display: inherit">Chance (above) and Aria (below).</p>
+       <img class="img-responsive img-rounded center-block" src="Aria.jpg" alt="Aorable dog" style="width: 50%">
+       <p>asdf.</p>
     </div>
-    
- </div>
+ </section>
  
- <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: auto auto">
+ <section id="Cats" class="row" style="background-color: lightcyan;">
+    <div class="col-sm-9" >
+        <h3 style="text-align: center">Raven & Boots</h3>
+        <p>Info</p>
+        <p>Info</p>
+    </div>
+    <div class="col-sm-3">
+        <img class="img-responsive img-circle center-block" src="Raven.jpg" alt="Adorable cat" style="width: 50%">
+        <p class="label label-default" style="display: inherit">Raven (above) and Boots (below).</p>
+        <img class="img-responsive img-rounded center-block" src="boots.jpg" alt="Cat with tongue out" style="width: 50%">
+        <p>Info</p>
+    </div>
+ </section>
+ 
+ <section id="Fish" class="row" style="background-color: #eee; margin: 0 1px">
+    <div class="col-sm-9">
+        <h3 style="text-align: center">The Fish</h3>
+        <p>The fish are easy to please. Feed the fish a pinch of food every morning and turn on the light. At night turn the light off. If for any reason you cannot turn off the light </p>
+        <p>Info</p>
+    </div>
+    <div class="col-sm-3" >
+       <img class="img-responsive img-circle center-block" src="fish.jpg" alt="Fish tank" style="width: 50%">
+        <p>Info</p>
+        <img class="img-responsive img-rounded center-block" src="black%20fish.jpg" alt="One black fish" style="width: 50%">
+        <p>Info</p>
+    </div>
+</section>
+
+ <section id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: auto auto">
      <ol class="carousel-indicators">
-         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-         <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" >
-      <div class="item active"><img class="img-responsive center-block" src="Raven.jpg" width = "200px" alt="Black adult cat"></div>
-      <div class="item "><img class="img-responsive center-block" src="Chance_closeup.jpg" alt="Adorable dog close up" width="200px"></div>
-      <div class="item"><img class="img-responsive center-block" src="Aria.jpg" alt="Dog sleeping" width="200px" ></div>
+      <img class="img-responsive center-block item active" src="dogs%20playing.jpg" width = "200px" alt="Dogs plyaing">
+      <img class="img-responsive center-block item" src="cat%20treats.jpg" alt="Cats eating treats" width="200px">
+      <img class="img-responsive center-block item" src="Playing%20dead.jpg" alt="Dog sleeping" width="200px" >
+      <img class="img-responsive center-block item" src="Raven%20and%20Boots.jpg" alt="Cat looking up" width="200px" >
+      <img class="img-responsive center-block item" src="Aria%20and%20Raven.jpg" alt="Dog and cat cuddling" width="200px" >
+      <img class="img-responsive center-block item" src="cuddling.jpg" alt="Dogs cuddling" width="200px" >
+      <img class="img-responsive center-block item" src="boots%20window.jpg" alt="Cat by the window" width="200px" >
+      <img class="img-responsive center-block item" src="aria%20hotdog.jpg" alt="Dog dressed as hotdog" width="200px" >
     </div>
 
     <!-- Left and right controls -->
@@ -78,7 +131,14 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
+</section>
+
+<br>
+
+<section id="Contact" style="text-align: center" >
+    <h4>Contact Information</h4>
+    <p class="glyphicon glyphicon-phone-alt">407-777-1234</p>
+</section>
 
 </body>
 </html>
